@@ -18,9 +18,7 @@ echo -e "\n"
 
 kcov --bash-dont-parse-binary-dir \
      --include-path=. \
-     /var/tmp/coverage \
+     ./coverage \
      bats -t tests
-     
-cd /var/tmp/coverage
 
 /usr/local/bin/codecov
