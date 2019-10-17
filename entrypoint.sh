@@ -13,6 +13,9 @@ fi
 
 cd "${GITHUB_WORKSPACE}" || exit 3
 
+ls -la
+echo -e "\n"
+
 kcov --bash-dont-parse-binary-dir \
      --include-path=. \
      /var/tmp/coverage \
