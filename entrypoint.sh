@@ -21,4 +21,4 @@ kcov --bash-dont-parse-binary-dir \
      /var/tmp/coverage \
      bats -t tests
 
-/usr/local/bin/codecov -s /var/tmp/coverage
+/usr/local/bin/codecov -s /var/tmp/coverage -B "${GITHUB_REF##*/}"
