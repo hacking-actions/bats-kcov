@@ -11,13 +11,13 @@ if [[ -z "${GITHUB_WORKSPACE}" ]]; then
     exit 2
 fi
 
-#cd "${GITHUB_WORKSPACE}" || exit 3
+cd "${GITHUB_WORKSPACE}" || exit 3
 
-#kcov --bash-dont-parse-binary-dir \
-#     --include-path=. \
-#     /var/tmp/coverage \
-#     bats -t tests
-#     
-#cd /var/tmp/coverage
-#
-#/usr/local/bin/codecov
+kcov --bash-dont-parse-binary-dir \
+     --include-path=. \
+     /var/tmp/coverage \
+     bats -t tests
+     
+cd /var/tmp/coverage
+
+/usr/local/bin/codecov
