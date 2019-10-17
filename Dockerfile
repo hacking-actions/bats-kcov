@@ -1,4 +1,4 @@
-FROM madhacking/bats-kcov
+FROM madhacking/bats-kcov:20190807
 
 COPY emtrypoint.sh /entrypoint.sh
 
